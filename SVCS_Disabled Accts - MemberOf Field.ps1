@@ -7,7 +7,18 @@ If (!(test-path $path))
         md $path
     }
 
-Write-Host "Hello, This script is designed to fetch Disabled service accounts - and then iterate through the names found to return their MemberOf fields."
+Write-Host "  _____________   _____________     _________                           .__                                            
+ /   _____/\   \ /   /\_   ___ \   /   _____/ ____ _____ _______   ____ |  |__   ___________                           
+ \_____  \  \   Y   / /    \  \/   \_____  \_/ __ \\__  \\_  __ \_/ ___\|  |  \_/ __ \_  __ \                          
+ /        \  \     /  \     \____  /        \  ___/ / __ \|  | \/\  \___|   Y  \  ___/|  | \/                          
+/_______  /   \___/    \______  / /_______  /\___  >____  /__|    \___  >___|  /\___  >__|                             
+        \/                    \/          \/     \/     \/            \/     \/     \/                                 
+___________.___ _______  ________    ______________ ______________ _____________________ ____ _________________ ___ ._.
+\_   _____/|   |\      \ \______ \   \__    ___/   |   \_   _____/ \__    ___/\______   \    |   \__    ___/   |   \| |
+ |    __)  |   |/   |   \ |    |  \    |    | /    ~    \    __)_    |    |    |       _/    |   / |    | /    ~    \ |
+ |     \   |   /    |    \|    `   \   |    | \    Y    /        \   |    |    |    |   \    |  /  |    | \    Y    /\|
+ \___  /   |___\____|__  /_______  /   |____|  \___|_  /_______  /   |____|    |____|_  /______/   |____|  \___|_  / __
+     \/                \/        \/                  \/        \/                     \/                         \/  \/"
 
 #Modify the Select-Object fields as needed. All Selectable Objects can be viewed by using 'get-aduser -Filter 'UserAccountControl -eq "66050"' -properties *' in a Powershell window. 
 
