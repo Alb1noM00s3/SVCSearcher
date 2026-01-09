@@ -7,7 +7,12 @@ If (!(test-path $path))
         md $path
     }
 
-Write-Host "Hello, This script is designed to fetch Enabled service accounts - and then iterate through the names found to return their MemberOf fields."
+Write-Host "  _____________   _____________     _________                           .__                  
+ /   _____/\   \ /   /\_   ___ \   /   _____/ ____ _____ _______   ____ |  |__   ___________ 
+ \_____  \  \   Y   / /    \  \/   \_____  \_/ __ \\__  \\_  __ \_/ ___\|  |  \_/ __ \_  __ \
+ /        \  \     /  \     \____  /        \  ___/ / __ \|  | \/\  \___|   Y  \  ___/|  | \/
+/_______  /   \___/    \______  / /_______  /\___  >____  /__|    \___  >___|  /\___  >__|   
+        \/                    \/          \/     \/     \/            \/     \/     \/       "
 
 #Modify the Select-Object fields as needed. All Selectable Objects can be viewed by using 'get-aduser -Filter 'UserAccountControl -eq "66048"' -properties *' in a Powershell window. 
 
